@@ -2,8 +2,8 @@ import java.util.Objects;
 
 public class CtdPoint
 {
-    int x, y;
-    double angle;
+    private int x, y;
+    private double angle;
 
     public CtdPoint()
     {
@@ -68,6 +68,6 @@ public class CtdPoint
         return "CtdPoint{" +
                 "(" + x +
                 ", " + y +
-                ") @"+String.format("%.f",angle)+"radians }";
+                ") @"+String.format("%3.2f",angle)+"radians }";
     }
 }
