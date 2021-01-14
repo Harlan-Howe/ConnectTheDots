@@ -383,7 +383,7 @@ public class CtdViewPanel extends JPanel implements MouseListener, MouseMotionLi
     public void saveButtonPressed()
     {
         JFileChooser chooser = new JFileChooser();
-/       if (lastFile != null)
+        if (lastFile != null)
             chooser.setSelectedFile(lastFile);
         int result = chooser.showSaveDialog(this);
         if (result == JFileChooser.APPROVE_OPTION)
