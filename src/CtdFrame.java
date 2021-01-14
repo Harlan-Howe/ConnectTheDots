@@ -80,6 +80,8 @@ public class CtdFrame extends JFrame implements ActionListener, ChangeListener
         saveScreenButton.addActionListener(this);
         filePanel.add(saveScreenButton);
 
+        filePanel.add(Box.createVerticalGlue());
+
         filePanel.setBorder(BorderFactory.createTitledBorder("File Operations"));
         return filePanel;
     }
